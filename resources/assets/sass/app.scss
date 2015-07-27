@@ -1,2 +1,51 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$footer-height: 116px;
+
+html {
+  position: relative;
+  height: 100%;
+
+  body {
+    height: 100%;
+    width: 100%;
+    padding-bottom: $footer-height;
+    font-weight: 100;
+    font-family: 'Lato';
+
+    .main-container {
+      display:table;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      .content {
+        display:table-cell;
+        vertical-align:middle;
+
+        .title,
+        .email {
+          text-align:center;
+        }
+
+        .title {
+          font-size: 96px;
+        }
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer-height;
+      background-color: #f5f5f5;
+
+      dl {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
