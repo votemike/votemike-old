@@ -17,7 +17,7 @@
                 <div class="email"><a href='mailto&#58;mich&#97;el&#64;votem%69k%65&#46;c&#111;&#46;uk'>michael&#64;vote&#109;ike&#46;co&#46;uk</a></div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer homepage">
             <div class="container">
                 <dl class="dl-horizontal">
                     <dt>My Sites:</dt>

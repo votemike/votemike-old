@@ -51,6 +51,18 @@ html {
         height: auto;
       }
     }
+
+    .footer:not(.homepage) {
+      .container {
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto;
+
+        p {
+          margin: 20px 0;
+        }
+      }
+    }
   }
 
 }
