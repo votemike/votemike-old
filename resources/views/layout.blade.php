@@ -13,7 +13,8 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">VoteMike</a>
+            <a class="navbar-brand" href="{{ route('homepage') }}">VoteMike</a>
+            <a class="navbar-brand" href="{{ route('showBlogPosts') }}">Blog</a>
         </div>
     </div>
 </nav>

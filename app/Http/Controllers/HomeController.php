@@ -8,6 +8,7 @@ class HomeController extends Controller
     public function index() {
         $keywords = ['LAMP', 'PHP', 'Laravel', 'Javascript', 'AngularJs', 'REST' , 'MySQL', 'HTML5', 'CSS3'];
         $sites = [
+            'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
             'Used Blocks' => ['title' => 'Placeholder site for second hand phone blocks', 'link' => 'http://usedblocks.co.uk'],
         ];

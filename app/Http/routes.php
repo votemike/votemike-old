@@ -11,15 +11,33 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+$domain = env('BASE_DOMAIN');
 
-Route::group(['prefix' => 'auth'], function () {
-    // Authentication routes...
-    Route::get('login', 'Auth\AuthController@getLogin');
-    Route::post('login', 'Auth\AuthController@postLogin');
-    Route::get('logout', 'Auth\AuthController@getLogout');
+Route::group(['domain' => 'blog.' . $domain], function () {
+    Route::get('/', ['as' => 'showBlogPosts', 'uses' => 'BlogPostController@index']);
 
-    // Registration routes...
-    Route::get('register', 'Auth\AuthController@getRegister');
-    Route::post('register', 'Auth\AuthController@postRegister');
+    Route::group(['middleware' => 'auth'], function () {
+        Route::get('new', ['as' => 'createBlogPost', 'uses' => 'BlogPostController@create']);
+        Route::post('new', ['as' => 'storeBlogPost', 'uses' => 'BlogPostController@store']);
+        Route::get('{slug}/edit', ['as' => 'editBlogPost', 'uses' => 'BlogPostController@edit']);
+        Route::put('update/{id}', ['as' => 'updateBlogPost', 'uses' => 'BlogPostController@update']);
+        Route::delete('{id}', ['as' => 'destroyBlogPost', 'uses' => 'BlogPostController@destroy']);
+    });
+
+    Route::get('{slug}', ['as' => 'showBlogPost', 'uses' => 'BlogPostController@show']);
+});
+
+Route::group(['domain' => $domain], function () {
+    Route::get('/', ['as' => 'homepage', 'uses' => 'HomeController@index']);
+
+    Route::group(['prefix' => 'auth'], function () {
+        // Authentication routes...
+        Route::get('login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
+        Route::post('login', ['as' => 'doLogin', 'uses' => 'Auth\AuthController@postLogin']);
+        Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
+
+        // Registration routes...
+        Route::get('register', ['as' => 'register', 'uses' => 'Auth\AuthController@getRegister']);
+        Route::post('register', ['as' => 'doRegister', 'uses' => 'Auth\AuthController@postRegister']);
+    });
 });

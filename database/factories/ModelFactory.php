@@ -19,3 +19,15 @@ $factory->define(Votemike\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(Votemike\BlogPost::class, function (Faker\Generator $faker) {
+    $title = $faker->sentence;
+
+    return [
+        'author_id' => factory(Votemike\User::class)->create()->id,
+        'title' => $title,
+        'body' => $faker->paragraph,
+        'slug' => str_slug($title),
+        'active' => rand(0,1),
+    ];
+});
