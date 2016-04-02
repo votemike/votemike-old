@@ -37,7 +37,7 @@ Route::group(['domain' => $domain], function () {
         Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
 
         // Registration routes...
-        Route::get('register', ['as' => 'register', 'uses' => 'Auth\AuthController@getRegister']);
-        Route::post('register', ['as' => 'doRegister', 'uses' => 'Auth\AuthController@postRegister']);
+//        Route::get('register', ['as' => 'register', 'uses' => 'Auth\AuthController@getRegister']);
+//        Route::post('register', ['as' => 'doRegister', 'uses' => 'Auth\AuthController@postRegister']);
     });
 });
