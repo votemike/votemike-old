@@ -16,7 +16,7 @@
                     </form>
                 @endif
             </div>
-            <p>{!! $post->body !!}</p>
+            {!! $post->body !!}
         </div>
     </div>
 @stop
