@@ -1,4 +1,4 @@
 ## VOTEMIKE
 
 ### TODO
-Make footer mobile friendly
+When truncating article, make sure tags are closed (or find a way around this)

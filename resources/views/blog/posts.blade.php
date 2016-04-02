@@ -25,7 +25,7 @@
                     </div>
                     <div class="list-group-item">
                         <article>
-                            {!! str_limit($post->body, 1500, $end = '....... <a href='.route('showBlogPost', [$post->slug]).'>Read More</a>') !!}
+                            {!! str_limit($post->body, 350, $end = '....... <a href='.route('showBlogPost', [$post->slug]).'>Read More</a>') !!}
                         </article>
                     </div>
                 </div>
