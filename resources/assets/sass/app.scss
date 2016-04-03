@@ -47,10 +47,8 @@ html {
       }
 
       &.homepage {
-        @media (max-width: 767px) {
-          position: relative;
-          height: auto;
-        }
+        position: relative;
+        height: auto;
       }
     }
 
