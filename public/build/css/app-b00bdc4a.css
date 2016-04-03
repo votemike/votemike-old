@@ -5758,8 +5758,8 @@ html {
     height: 100%;
     width: 100%;
     padding-bottom: 116px;
-    font-weight: 100;
-    font-family: 'Lato'; }
+    font-weight: 300;
+    font-family: 'Lato', sans-serif; }
     html body .main-container {
       display: table;
       margin: 0;
@@ -5769,10 +5769,8 @@ html {
       html body .main-container .content {
         display: table-cell;
         vertical-align: middle; }
-        html body .main-container .content .title,
-        html body .main-container .content .email {
-          text-align: center; }
         html body .main-container .content .title {
+          font-weight: 100;
           font-size: 96px; }
     html body .footer {
       position: absolute;

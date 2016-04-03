@@ -7,12 +7,12 @@
 
         <title>Michael Gwynne</title>
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
     </head>
     <body>
         <div class="main-container">
-            <div class="content">
+            <div class="content text-center">
                 <div class="title">Michael Gwynne</div>
                 <div class="email"><a href='mailto&#58;mich&#97;el&#64;votem%69k%65&#46;c&#111;&#46;uk'>michael&#64;vote&#109;ike&#46;co&#46;uk</a></div>
             </div>
