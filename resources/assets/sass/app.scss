@@ -46,9 +46,11 @@ html {
         margin-bottom: 0;
       }
 
-      @media (max-width: 767px) {
-        position: relative;
-        height: auto;
+      &.homepage {
+        @media (max-width: 767px) {
+          position: relative;
+          height: auto;
+        }
       }
     }
 

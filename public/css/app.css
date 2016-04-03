@@ -5781,7 +5781,7 @@ html {
       html body .footer dl {
         margin-bottom: 0; }
       @media (max-width: 767px) {
-        html body .footer {
+        html body .footer.homepage {
           position: relative;
           height: auto; } }
     html body .footer:not(.homepage) .container {
