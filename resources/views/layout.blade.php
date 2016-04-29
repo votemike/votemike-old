@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Michael Gwynne PHP/Laravel/Full-Stack developer based in London"/>
-    <title>VoteMike</title>
+    <title>@yield('title', 'VoteMike')</title>
 
     <link href="//fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
