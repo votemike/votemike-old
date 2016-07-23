@@ -2,13 +2,13 @@
 
 namespace Votemike\Http\Controllers;
 
-
 class HomeController extends Controller
 {
     public function index() {
         $keywords = ['LAMP', 'PHP', 'Laravel', 'Javascript', 'AngularJs', 'REST' , 'MySQL', 'HTML5', 'CSS3'];
         $sites = [
             'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
+            'Bullshitter\'s Guide' => ['title' => 'Wiki for involving yourself in conversations you know nothing about', 'link' => 'http://bullshitters.guide/'],
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
             'Used Blocks' => ['title' => 'Placeholder site for second hand phone blocks', 'link' => 'http://usedblocks.co.uk'],
         ];
@@ -19,7 +19,6 @@ class HomeController extends Controller
         ];
         $workedOn = [
             'Twitter Tools' => ['title' => 'Tools to check various personal Twitter information', 'link' => 'http://www.switchplane.com/awesome/'],
-            'Extrascents' => ['title' => 'Discount perfume website', 'link' => 'http://www.extrascents.com/'],
             'British Airport Transfers' => ['title' => 'Taxi booking website', 'link' => 'http://www.british-airport-transfers.co.uk/'],
             'MNO Gallery' => ['title' => 'Photography online shop', 'link' => 'http://www.mnogallery.com/'],
             'KPlus' => ['title' => 'Moodle based LMS for Kaplan', 'link' => 'https://online.kaplaninternational.com'],
