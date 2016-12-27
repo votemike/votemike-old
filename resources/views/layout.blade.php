@@ -15,6 +15,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ route('homepage') }}">VoteMike</a>
             <a class="navbar-brand" href="{{ route('showBlogPosts') }}">Blog</a>
+            <a class="navbar-brand" href="{{ route('tv') }}">TV</a>
         </div>
     </div>
 </nav>
