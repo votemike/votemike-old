@@ -30,6 +30,7 @@ Route::group(['domain' => 'blog.' . $domain], function () {
 Route::group(['domain' => $domain], function () {
     Route::get('/', ['as' => 'homepage', 'uses' => 'HomeController@index']);
     Route::get('tv', ['as' => 'tv', 'uses' => 'TvController@index']);
+    Route::get('stress-test', ['as' => 'stressTest', 'uses' => 'StressTestController@index']);
 
     Route::group(['prefix' => 'auth'], function () {
         // Authentication routes...

@@ -8,6 +8,8 @@
 
     <link href="//fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+
+    @yield('stylesheets')
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -16,6 +18,7 @@
             <a class="navbar-brand" href="{{ route('homepage') }}">VoteMike</a>
             <a class="navbar-brand" href="{{ route('showBlogPosts') }}">Blog</a>
             <a class="navbar-brand" href="{{ route('tv') }}">TV</a>
+            <a class="navbar-brand" href="{{ route('stressTest') }}">Stress Test</a>
         </div>
     </div>
 </nav>
@@ -30,6 +33,6 @@
         <p>Created by <a href="http://www.votemike.co.uk/">Michael Gwynne</a></p>
     </div>
 </footer>
-
+@yield('scripts')
 </body>
 </html>

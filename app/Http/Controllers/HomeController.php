@@ -10,6 +10,7 @@ class HomeController extends Controller
             'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
             'Bullshitter\'s Guide' => ['title' => 'Wiki for involving yourself in conversations you know nothing about', 'link' => 'http://bullshitters.guide/'],
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
+            'Property Stress Test' => ['title' => 'Demo Property Stress Test Tool', 'link' => route('stressTest')],
             'Used Blocks' => ['title' => 'Placeholder site for second hand phone blocks', 'link' => 'http://usedblocks.co.uk'],
         ];
         $personal = [
