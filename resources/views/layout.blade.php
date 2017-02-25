@@ -12,6 +12,7 @@
     @yield('stylesheets')
 </head>
 <body>
+@include('google-analytics')
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">

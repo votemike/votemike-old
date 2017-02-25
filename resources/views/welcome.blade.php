@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
     </head>
     <body>
+        @include('google-analytics')
         <div class="main-container">
             <div class="content text-center">
                 <div class="title">Michael Gwynne</div>
