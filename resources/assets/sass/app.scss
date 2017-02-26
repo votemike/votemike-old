@@ -1,6 +1,6 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-$footer-height: 116px;
+$footer-height: 120px;
 
 html {
   position: relative;
@@ -40,7 +40,8 @@ html {
       bottom: 0;
       width: 100%;
       height: $footer-height;
-      background-color: #f5f5f5;
+      background-color: #f2f2f2;
+      padding-top: 4px;
 
       dl {
         margin-bottom: 0;
