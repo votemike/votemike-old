@@ -13,6 +13,12 @@
 
 $domain = env('BASE_DOMAIN');
 
+Route::group(['domain' => 'www.' . $domain], function () {
+    Route::get('/', function() {
+        return redirect()->route('homepage');
+    });
+});
+
 Route::group(['domain' => 'blog.' . $domain], function () {
     Route::get('/', ['as' => 'showBlogPosts', 'uses' => 'BlogPostController@index']);
 
