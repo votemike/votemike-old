@@ -10,6 +10,7 @@ class HomeController extends Controller
             'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
             'Bullshitter\'s Guide' => ['title' => 'Wiki for involving yourself in conversations you know nothing about', 'link' => 'http://bullshitters.guide/'],
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
+            'Inveniō' => ['title' => 'Online video discovery', 'link' => 'https://inveniō.com'],
             'Property Stress Test' => ['title' => 'Demo Property Stress Test Tool', 'link' => route('stressTest')],
             'Used Blocks' => ['title' => 'Placeholder site for second hand phone blocks', 'link' => 'http://usedblocks.co.uk'],
         ];
@@ -19,6 +20,7 @@ class HomeController extends Controller
             'LinkedIn' => ['title' => 'LinkedIn page', 'link' => 'https://www.linkedin.com/pub/michael-gwynne/b/b5a/299'],
         ];
         $workedOn = [
+            '/schedules' => ['title' => 'BBC TV and Radio schedules', 'link' => 'https://www.bbc.co.uk/schedules'],
             'Twitter Tools' => ['title' => 'Tools to check various personal Twitter information', 'link' => 'http://www.switchplane.com/awesome/'],
             'British Airport Transfers' => ['title' => 'Taxi booking website', 'link' => 'http://www.british-airport-transfers.co.uk/'],
             'MNO Gallery' => ['title' => 'Photography online shop', 'link' => 'http://www.mnogallery.com/'],
