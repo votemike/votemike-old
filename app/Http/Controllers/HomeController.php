@@ -20,6 +20,7 @@ class HomeController extends Controller
             'LinkedIn' => ['title' => 'LinkedIn page', 'link' => 'https://www.linkedin.com/pub/michael-gwynne/b/b5a/299'],
         ];
         $workedOn = [
+            '/programmes' => ['title' => 'A record of everything on BBC Television and Radio', 'link' => 'https://www.bbc.co.uk/programmes'],
             '/schedules' => ['title' => 'BBC TV and Radio schedules', 'link' => 'https://www.bbc.co.uk/schedules'],
             'Twitter Tools' => ['title' => 'Tools to check various personal Twitter information', 'link' => 'http://www.switchplane.com/awesome/'],
             'British Airport Transfers' => ['title' => 'Taxi booking website', 'link' => 'http://www.british-airport-transfers.co.uk/'],
