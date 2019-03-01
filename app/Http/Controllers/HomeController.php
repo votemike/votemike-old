@@ -5,7 +5,7 @@ namespace Votemike\Http\Controllers;
 class HomeController extends Controller
 {
     public function index() {
-        $keywords = ['LAMP', 'PHP', 'Laravel', 'Javascript', 'AngularJs', 'REST' , 'MySQL', 'HTML5', 'CSS3'];
+        $keywords = ['LAMP', 'PHP', 'Laravel', 'Javascript', 'AngularJs', 'REST' , 'MySQL', 'HTML5', 'CSS3', 'React', 'NodeJS'];
         $sites = [
             'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
             'Bullshitter\'s Guide' => ['title' => 'Wiki for involving yourself in conversations you know nothing about', 'link' => 'http://bullshitters.guide/'],
@@ -20,9 +20,8 @@ class HomeController extends Controller
             'LinkedIn' => ['title' => 'LinkedIn page', 'link' => 'https://www.linkedin.com/pub/michael-gwynne/b/b5a/299'],
         ];
         $workedOn = [
+            'BBC Sounds' => ['title' => 'Live and on-demand radio and podcasts', 'link' => 'https://www.bbc.co.uk/sounds'],
             '/programmes' => ['title' => 'A record of everything on BBC Television and Radio', 'link' => 'https://www.bbc.co.uk/programmes'],
-            '/schedules' => ['title' => 'BBC TV and Radio schedules', 'link' => 'https://www.bbc.co.uk/schedules'],
-            'Twitter Tools' => ['title' => 'Tools to check various personal Twitter information', 'link' => 'http://www.switchplane.com/awesome/'],
             'British Airport Transfers' => ['title' => 'Taxi booking website', 'link' => 'http://www.british-airport-transfers.co.uk/'],
             'MNO Gallery' => ['title' => 'Photography online shop', 'link' => 'http://www.mnogallery.com/'],
             'KPlus' => ['title' => 'Moodle based LMS for Kaplan', 'link' => 'https://online.kaplaninternational.com'],
