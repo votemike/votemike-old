@@ -12,6 +12,7 @@ class HomeController extends Controller
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
             'Inveniō' => ['title' => 'Online video discovery', 'link' => 'https://inveniō.com'],
             'Property Stress Test' => ['title' => 'Demo Property Stress Test Tool', 'link' => route('stressTest')],
+            'Tah-Do' => ['title' => 'Impact/Effort ToDo List and Chart', 'link' => 'https://tahdo.app'],
             'Used Blocks' => ['title' => 'Placeholder site for second hand phone blocks', 'link' => 'http://usedblocks.co.uk'],
         ];
         $personal = [
