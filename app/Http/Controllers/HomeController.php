@@ -7,10 +7,9 @@ class HomeController extends Controller
     public function index() {
         $keywords = ['LAMP', 'PHP', 'Laravel', 'Javascript', 'AngularJs', 'REST' , 'MySQL', 'HTML5', 'CSS3', 'ReactJS', 'NodeJS', 'Web Performace', 'SEO', 'Accessibility'];
         $sites = [
-            'Blog' => ['title' => 'My blog', 'link' => route('showBlogPosts')],
             'CssPalette' => ['title' => 'Check which CSS colours you have on your site', 'link' => 'http://www.csspalette.co'],
             'Inveniō' => ['title' => 'Online video discovery', 'link' => 'https://inveniō.com'],
-            'Property Stress Test' => ['title' => 'Demo Property Stress Test Tool', 'link' => route('stressTest')],
+            'Property Stress Test' => ['title' => 'Demo Property Stress Test Tool', 'link' => 'https://votemike.github.io/stress-test/'],
             'Tah-Do' => ['title' => 'Impact/Effort ToDo List and Chart', 'link' => 'https://tahdo.app'],
         ];
         $personal = [

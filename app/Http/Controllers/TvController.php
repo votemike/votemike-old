@@ -4,6 +4,6 @@ class TvController extends Controller
 {
     public function index()
     {
-        return view('tv');
+        return redirect('https://inveniō.com', 301);
     }
 }

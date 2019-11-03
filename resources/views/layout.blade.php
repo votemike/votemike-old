@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Michael Gwynne PHP/Laravel/Full-Stack developer based in London"/>
+    <meta name="description" content="Michael Gwynne PHP/Laravel/React/Full-Stack developer based in London"/>
     <title>@yield('title', 'VoteMike')</title>
 
     <link href="//fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet" type="text/css">
@@ -17,9 +17,8 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ route('homepage') }}">VoteMike</a>
-            <a class="navbar-brand" href="{{ route('showBlogPosts') }}">Blog</a>
-            <a class="navbar-brand" href="{{ route('tv') }}">TV</a>
-            <a class="navbar-brand" href="{{ route('stressTest') }}">Stress Test</a>
+            <a class="navbar-brand" href="https://inveniō.com">TV</a>
+            <a class="navbar-brand" href="https://votemike.github.io/stress-test/">Stress Test</a>
         </div>
     </div>
 </nav>

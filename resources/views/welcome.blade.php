@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Michael Gwynne PHP/Laravel/Full-Stack developer based in London"/>
+        <meta name="description" content="Michael Gwynne PHP/Laravel/React/Full-Stack developer based in London"/>
 
         <title>Michael Gwynne</title>
 

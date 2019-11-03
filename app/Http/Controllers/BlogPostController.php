@@ -11,63 +11,41 @@ class BlogPostController extends Controller
 {
     public function index()
     {
-        $query = BlogPost::latest();
-        if (!Auth::check()) {
-            $query->active();
-        }
-        $posts = $query->paginate(10);
-
-        return view('blog.posts')->withPosts($posts);
+        return redirect('https://votemike.co.uk/', 301);
     }
 
     public function create()
     {
-        return view('blog.create');
+        return redirect('https://votemike.co.uk/', 301);
     }
 
     public function store(Request $request)
     {
-        $post = new BlogPost();
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->active = $request->has('active');
+        return redirect('https://votemike.co.uk/', 301);
 
-        Auth::user()->blogPosts()->save($post);
-
-        return redirect(route('showBlogPost', [$post->slug]));
     }
 
     public function show($slug)
     {
-        $post = BlogPost::whereSlug($slug)->firstOrFail();
+        return redirect('https://votemike.co.uk/', 301);
 
-        return view('blog.post')->withPost($post);
     }
 
     public function edit($slug)
     {
-        $post = BlogPost::whereSlug($slug)->firstOrFail();
+        return redirect('https://votemike.co.uk/', 301);
 
-        return view('blog.edit')->withPost($post);
     }
 
     public function update(Request $request, $id)
     {
-        $post = BlogPost::findOrFail($id);
+        return redirect('https://votemike.co.uk/', 301);
 
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->active = $request->has('active');
-        $post->save();
-
-        return redirect(route('showBlogPost', [$post->slug]));
     }
 
     public function destroy($id)
     {
-        $post = BlogPost::findOrFail($id);
-        $post->delete();
+        return redirect('https://votemike.co.uk/', 301);
 
-        return redirect(route('showBlogPosts'));
     }
 }
